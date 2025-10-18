@@ -1,0 +1,5 @@
+﻿[
+  { "id": "aula-101", "nombre": "Aula 101",       "tipo": "Aula",        "imagen": "/aula.jpg" },
+  { "id": "lab-1",    "nombre": "Laboratorio 1",  "tipo": "Laboratorio", "imagen": "/lab.jpg" },
+  { "id": "cancha-a", "nombre": "Cancha A",       "tipo": "Cancha",      "imagen": "/cancha.jpg" }
+]

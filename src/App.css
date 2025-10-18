@@ -1,38 +1,111 @@
-.App {
+﻿:root {
+  --rosa-claro: #ffe6f2;
+  --rosa-principal: #ff80b3;
+  --rosa-oscuro: #e35d9a;
+  --texto: #333;
+  --blanco: #fff;
+}
+
+body {
+  background: var(--rosa-claro);
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  color: var(--texto);
+}
+
+.app-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(90deg, var(--rosa-principal), var(--rosa-oscuro));
+  color: var(--blanco);
   text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  padding: 14px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  z-index: 10;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-footer {
+  text-align: center;
+  background: var(--rosa-principal);
+  color: var(--blanco);
+  padding: 12px;
+  margin-top: 40px;
+  font-size: 14px;
+  border-top: 2px solid var(--rosa-oscuro);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+form, .reserva, .reserva-confirmada {
+  background: var(--blanco);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button {
+  background: var(--rosa-principal);
+  border: none;
+  border-radius: 8px;
+  color: var(--blanco);
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: 0.2s ease;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background: var(--rosa-oscuro);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.reserva-confirmada {
+  border: 2px solid var(--rosa-oscuro);
+  padding: 16px;
+  margin-top: 16px;
+}
+
+.reserva-confirmada h3 {
+  color: var(--rosa-oscuro);
+}
+
+h2, h3 {
+  color: var(--rosa-oscuro);
+}
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  25% { transform: scale(1.2); }
+  40% { transform: scale(0.95); }
+  60% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
+
+.app-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(90deg, var(--rosa-principal), var(--rosa-oscuro));
+  color: var(--blanco);
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  padding: 14px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+
+.app-header::first-letter {
+  animation: heartbeat 1.5s infinite;
+  display: inline-block;
+}
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); color: #fff; }
+  25% { transform: scale(1.25); color: #ffd6e8; }
+  50% { transform: scale(0.9); color: #fff0f6; }
+  75% { transform: scale(1.15); color: #fff; }
+}
+
+.app-header span.heart {
+  display: inline-block;
+  animation: heartbeat 1.8s infinite ease-in-out;
 }

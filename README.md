@@ -9,7 +9,6 @@ npm install
 npm start
 🧪 Pruebas
 bash
-Copiar código
 npm test
 # o
 npx vitest run

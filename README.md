@@ -12,6 +12,7 @@ bash
 npm test
 # o
 npx vitest run
+
 ## 🧩 Funcionalidades
 Ver espacios disponibles
 

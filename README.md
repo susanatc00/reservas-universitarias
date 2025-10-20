@@ -25,7 +25,7 @@ Confirmación con imagen del espacio
 Persistencia en localStorage
 
 ## 📦 Entregables incluidos
-Documento_de_Requisitos.pdf
+Sistema_Reservas_Universitarias.pdf
 
 UML_Casos_de_Uso.pdf
 
